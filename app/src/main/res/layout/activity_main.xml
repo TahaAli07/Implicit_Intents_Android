@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yasir.usingintents.MainActivity"
+
+    android:clickable="false">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open WebPage"
+        android:id="@+id/webPage_button"
+
+        android:onClick="WebPage_OnClick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open MAPS"
+        android:id="@+id/maps_button"
+        android:layout_below="@+id/webPage_button"
+        android:layout_alignEnd="@+id/webPage_button"
+        android:onClick="Maps_OnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenPhoneDialer"
+        android:id="@+id/button"
+        android:layout_below="@+id/maps_button"
+        android:layout_alignStart="@+id/maps_button"
+        android:onClick="Phone_Dialer_OnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenCamera"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button"
+        android:onClick="OpenCamera_ONClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="Share_Onclick"/>
+</RelativeLayout>
